@@ -12,7 +12,7 @@ export default class Users extends Component {
     } else {
       return (
         <div style={userStyle}>
-          {this.props.users.map((user) => (
+          {users.map((user) => (
             <UserItem key={user.id} user={user} />
           ))}
         </div>
