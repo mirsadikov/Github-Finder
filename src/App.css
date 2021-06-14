@@ -48,6 +48,12 @@ img {
   padding: 0 2rem;
 }
 
+@media (max-width: 550px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 /* Text Styles*/
 .x-large {
   font-size: 4rem;
@@ -194,6 +200,13 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
+}
+
+@media (max-width: 550px) {
+  .users-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 0.5rem !important;
+  }
 }
 
 .btn {

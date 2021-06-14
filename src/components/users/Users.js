@@ -11,7 +11,7 @@ export default class Users extends Component {
       return <Spinner />;
     } else {
       return (
-        <div style={userStyle}>
+        <div className='users-container' style={userStyle}>
           {users.map((user) => (
             <UserItem key={user.id} user={user} />
           ))}
