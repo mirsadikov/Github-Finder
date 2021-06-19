@@ -4,6 +4,11 @@ import Spinner from '../layout/Spinner';
 import PropTypes from 'prop-types';
 
 export default class Users extends Component {
+  static propTypes = {
+    users: PropTypes.array.isRequired,
+    loading: PropTypes.bool.isRequired,
+  };
+
   render() {
     const { users, loading } = this.props;
 
@@ -20,11 +25,6 @@ export default class Users extends Component {
     }
   }
 }
-
-Users.propTypes = {
-  users: PropTypes.array.isRequired,
-  loading: PropTypes.bool.isRequired,
-};
 
 const userStyle = {
   display: 'grid',

@@ -1,11 +1,13 @@
-import { Fragment } from 'react';
+import { Component, Fragment } from 'react';
 
-export default function About() {
-  return (
-    <Fragment>
-      <h1>About This App</h1>
-      <p>App to search Github Users</p>
-      <p>Version: 1.0.0</p>
-    </Fragment>
-  );
+export default class About extends Component {
+  render() {
+    return (
+      <Fragment>
+        <h1>About This App</h1>
+        <p>App to search Github Users</p>
+        <p>Version: 1.0.0</p>
+      </Fragment>
+    );
+  }
 }
