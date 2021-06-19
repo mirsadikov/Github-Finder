@@ -1,23 +1,18 @@
-import React, { Component } from 'react';
 import UserItem from './UserItem';
 import Spinner from '../layout/Spinner';
 import PropTypes from 'prop-types';
 
-export default class Users extends Component {
-  render() {
-    const { users, loading } = this.props;
-
-    if (loading) {
-      return <Spinner />;
-    } else {
-      return (
-        <div className='users-container' style={userStyle}>
-          {users.map((user) => (
-            <UserItem key={user.id} user={user} />
-          ))}
-        </div>
-      );
-    }
+export default function Users({ users, loading }) {
+  if (loading) {
+    return <Spinner />;
+  } else {
+    return (
+      <div className='users-container' style={userStyle}>
+        {users.map((user) => (
+          <UserItem key={user.id} user={user} />
+        ))}
+      </div>
+    );
   }
 }
 
