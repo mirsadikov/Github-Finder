@@ -11,14 +11,8 @@ import User from './components/users/User';
 
 import GithubState from './context/github/GithubState';
 import AlertState from './context/alert/AlertState';
-// import GithubContext from './context/github/githubContext';
 
 const App = () => {
-  // const { getDefaultUsers } = useContext(GithubContext);
-  // useEffect(() => {
-  //   getDefaultUsers();
-  // }, []);
-
   return (
     <GithubState>
       <AlertState>
