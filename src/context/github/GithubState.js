@@ -15,8 +15,8 @@ import {
 // Config
 let githubClientId;
 let githubClientSecret;
-githubClientId = process.env.GITHUB_CLIENT_ID;
-githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
+githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
+githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
 
 // if (process.env.NODE_ENV !== 'production') {
 //   githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
